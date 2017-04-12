@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uu.guaguaka.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:id="@+id/btn_ok"
+        android:text="完成"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_ok"
+        android:id="@+id/editor"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:layout_margin="15dp"
+        />
+
+    <com.uu.guaguaka.GuaGuaView
+        android:id="@+id/guagua"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:text="￥100"
+        app:text_color="#446987"
+        />
+
+</RelativeLayout>
